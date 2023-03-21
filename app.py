@@ -11,11 +11,12 @@
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
 # ------------------------------------------------------------------ #
-alphabet = input ('please enter a letter from the alphabet')
-if alphabet in 'a e i o u':
-    print(f'The letter {alphabet} is a vowel')
-else: 
-    print(f'The letter {alphabet} is a consonant')
+# SOLUTION HERE
+# alphabet = input ('please enter a letter from the alphabet')
+# if alphabet == 'a e i o u':
+#     print(f'The letter {alphabet} is a vowel')
+# else: 
+#     print(f'The letter {alphabet} is a consonant')
 
 # Exercise 2: Length of Phrase
 # ------------------------------------------------------------------ #
@@ -26,7 +27,10 @@ else:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
 # ------------------------------------------------------------------ #
-
+phrase = ''
+while phrase != 'quit':
+    phrase = input ('Please enter a word or phrase')
+    print(f'What you entered is {len(phrase)} characters long')
 
 # Exercise 3: Calculate Dog Years
 # ------------------------------------------------------------------ #
