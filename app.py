@@ -72,17 +72,16 @@
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 # ------------------------------------------------------------------ #
-side_one = int(input('enter side a'))
-side_two = int(input('enter side b'))
-side_three = int(input('enter side c'))
-if side_one == side_two == side_three:
-    print(f'A triangle with sides of {side_one},{side_two}, & {side_three} is a equilateral triangle')
-elif side_one != side_two != side_three:
-    print(f'A triangle with side of {side_one},{side_two}, and {side_three} is a scalene triangle')
-else:
-    print(f'A triangle with a side of {side_one},{side_two}, and {side_three} is a isosceles triangle')
-
-    
+# SOLUTION HERE
+# side_one = int(input('enter side a'))
+# side_two = int(input('enter side b'))
+# side_three = int(input('enter side c'))
+# if side_one == side_two == side_three:
+#     print(f'A triangle with sides of {side_one},{side_two}, & {side_three} is a equilateral triangle')
+# elif side_one != side_two != side_three:
+#     print(f'A triangle with side of {side_one},{side_two}, and {side_three} is a scalene triangle')
+# else:
+#     print(f'A triangle with a side of {side_one},{side_two}, and {side_three} is a isosceles triangle')
 
 
 # Exercise 5: Fibonacci sequence for first 50 terms
@@ -97,12 +96,21 @@ else:
 #      term: 4 / number: 3
 #      term: 5 / number: 5
 #      etc.
-
 # Hints:
 # The next number is found by adding the two numbers before it
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
 # ------------------------------------------------------------------ #
+# initialize the first two terms
+num,num1 = 0, 1
+
+# print the first two terms separately
+print("term: 0 / number:", num)
+print("term: 1 / number:", num1)
+for j in range(2, 50):
+    num3 = num + num1
+    print("term:", j, "/ number:", num3)
+    num, num1 = num1, num3
 
 
 # Exericse 6: What's the Season?
