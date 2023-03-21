@@ -27,10 +27,11 @@
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
 # ------------------------------------------------------------------ #
-phrase = ''
-while phrase != 'quit':
-    phrase = input ('Please enter a word or phrase')
-    print(f'What you entered is {len(phrase)} characters long')
+# SOLUTION HERE
+# phrase = ''
+# while phrase != 'quit':
+#     phrase = input ('Please enter a word or phrase')
+#     print(f'What you entered is {len(phrase)} characters long')
 
 # Exercise 3: Calculate Dog Years
 # ------------------------------------------------------------------ #
@@ -47,6 +48,12 @@ while phrase != 'quit':
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 # ------------------------------------------------------------------ #
+age = int(input("Input a dog\'s age"))
+if age < 3:
+    dog_age = age * 10
+else: 
+     dog_age = 20 + (age - 2) * 7
+print(f'The dog\'s age in dog years is {dog_age}')
 
 
 # Exercise 4: What kind of Triangle?
