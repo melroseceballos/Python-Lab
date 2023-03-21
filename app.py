@@ -48,12 +48,13 @@
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 # ------------------------------------------------------------------ #
-age = int(input("Input a dog\'s age"))
-if age < 3:
-    dog_age = age * 10
-else: 
-     dog_age = 20 + (age - 2) * 7
-print(f'The dog\'s age in dog years is {dog_age}')
+# SOLUTION HERE
+# age = int(input("Input a dog\'s age"))
+# if age < 3:
+#     dog_age = age * 10
+# else: 
+#      dog_age = 20 + (age - 2) * 7
+# print(f'The dog\'s age in dog years is {dog_age}')
 
 
 # Exercise 4: What kind of Triangle?
@@ -71,6 +72,17 @@ print(f'The dog\'s age in dog years is {dog_age}')
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 # ------------------------------------------------------------------ #
+side_one = int(input('enter side a'))
+side_two = int(input('enter side b'))
+side_three = int(input('enter side c'))
+if side_one == side_two == side_three:
+    print(f'A triangle with sides of {side_one},{side_two}, & {side_three} is a equilateral triangle')
+elif side_one != side_two != side_three:
+    print(f'A triangle with side of {side_one},{side_two}, and {side_three} is a scalene triangle')
+else:
+    print(f'A triangle with a side of {side_one},{side_two}, and {side_three} is a isosceles triangle')
+
+    
 
 
 # Exercise 5: Fibonacci sequence for first 50 terms
