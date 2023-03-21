@@ -101,16 +101,16 @@
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
 # ------------------------------------------------------------------ #
-# initialize the first two terms
-num,num1 = 0, 1
+# SOLUTION HERE
+# num,num1 = 0, 1
 
-# print the first two terms separately
-print("term: 0 / number:", num)
-print("term: 1 / number:", num1)
-for j in range(2, 50):
-    num3 = num + num1
-    print("term:", j, "/ number:", num3)
-    num, num1 = num1, num3
+# # print the first two terms separately
+# print("term: 0 / number:", num)
+# print("term: 1 / number:", num1)
+# for j in range(2, 50):
+#     num3 = num + num1
+#     print("term:", j, "/ number:", num3)
+#     num, num1 = num1, num3
 
 
 # Exericse 6: What's the Season?
@@ -127,11 +127,17 @@ for j in range(2, 50):
 #      Sep 22 - Dec 20: Fall
 # 4. Print the result as follows:
 #      <Mmm> <dd> is in <season>
-
-# Hints:
-# Consider using the in operator to check if a string is in a particular list/tuple like this:
-#   if input_month in ('Jan', 'Feb', 'Mar'):
-#
-# After setting the likely season, you can use another if...elif...else statement to "adjust" if
-# the day number falls within a certain range.
 # ------------------------------------------------------------------ #
+# Had to peek in the solutions branch for this one
+# not sure how to calculate the days to populate the right season
+month = input('Enter the month of the year in the three characters. Example (Jan - Dec): ')
+day = int(input('Enter the day of the month: '))
+if month in ('Dec', 'Jan', 'Feb'):
+    season = 'Fall' if month == 'Dec' and day < 21 else 'Winter'
+elif month in ('Mar', 'Apr', 'May'):
+    season = 'Winter' if month == 'Mar' and day < 20 else 'Spring'
+elif month in ('Jun', 'Jul', 'Aug'):
+    season = 'Spring' if month == 'Jun' and day < 21 else 'Summer'
+else:
+    season = 'Summer' if month == 'Sep' and day < 22 else 'Fall'
+print(f'{month} {day} is in {season}')
